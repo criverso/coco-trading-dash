@@ -1,0 +1,18 @@
+{
+  "name": "player2-platform",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run build -w @player2/shared && concurrently -n shared,api,app,admin -c yellow,cyan,green,magenta \"npm run dev -w @player2/shared\" \"npm run dev -w @player2/api\" \"npm run dev -w @player2/app\" \"npm run dev -w @player2/admin\"",
+    "build": "npm run build -w @player2/shared && npm run build -w @player2/api && npm run build -w @player2/app && npm run build -w @player2/admin",
+    "test": "npm run test -w @player2/shared && npm run test -w @player2/api",
+    "typecheck": "npm run typecheck -w @player2/shared && npm run typecheck -w @player2/api && npm run typecheck -w @player2/app && npm run typecheck -w @player2/admin"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

@@ -1,0 +1,18 @@
+# Replace these hostnames with real DNS records or an Oracle instance IP
+# before using this in production.
+app.player2.localhost {
+  reverse_proxy host.docker.internal:3000
+}
+
+admin.player2.localhost {
+  reverse_proxy host.docker.internal:3001
+}
+
+api.player2.localhost {
+  reverse_proxy host.docker.internal:4000
+}
+
+livekit.player2.localhost {
+  reverse_proxy host.docker.internal:7880
+}
+
