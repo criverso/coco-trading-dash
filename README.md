@@ -1,13 +1,13 @@
-# Player 2
+# Coco Trading Dash
 
-Player 2 is a monorepo MVP for a self-hosted social activity platform: request-board matching, clubs, social feed, messaging, video calls, safety verification, and a full moderation/admin surface.
+Coco Trading Dash is a monorepo MVP for a cocoa trading dashboard: market watch, portfolio metrics, order tickets, desk notes, counterparty groups, messaging, account review, and an admin surface for operations.
 
 ## Workspace layout
 
-- `apps/app`: member and club-owner PWA
+- `apps/app`: trader-facing dashboard
 - `apps/admin`: platform admin console
-- `apps/api`: NestJS API with seeded demo state and feature-gating logic
-- `packages/shared`: shared TypeScript domain models, zod schemas, and safety logic
+- `apps/api`: NestJS API with seeded demo trading state and feature-gating logic
+- `packages/shared`: shared TypeScript domain models, zod schemas, and review logic
 - `infra`: local infrastructure config for Postgres, Redis, MinIO, LiveKit, Mailpit, and Caddy
 
 ## Quick start
@@ -31,7 +31,7 @@ npm install
 npm run dev
 ```
 
-Member app: `http://localhost:3000`
+Trader app: `http://localhost:3000`
 
 Admin app: `http://localhost:3001`
 
@@ -43,15 +43,14 @@ MinIO console: `http://localhost:9001`
 
 ## Current implementation notes
 
-- The API boots with a seeded in-memory demo state so the full product surface is explorable immediately.
-- Shared safety logic covers trust scoring, biometric state exclusions, verification scoring, retention planning, and club gating.
+- The API boots with seeded in-memory cocoa trading data so the dashboard is explorable immediately.
+- Shared review logic covers trust scoring, restricted-state exclusions, verification scoring, retention planning, and group gating.
 - Postgres, Redis, MinIO, and LiveKit are scaffolded for the intended production architecture, but this first pass keeps runtime state in memory to make the stack runnable without a migration step.
-- Verification is modeled as OSS-first automation plus manual review escalation.
+- Account review is modeled as automation plus manual review escalation.
 
 ## Production follow-up
 
 - Swap the seeded store for Postgres repositories and Redis-backed jobs.
 - Replace demo LiveKit token issuance with signed production credentials.
-- Add OCR/barcode/liveness workers for full document processing.
+- Add document-processing workers for full account review.
 - Wire SMTP, object-storage encryption keys, and domain-backed Caddy TLS.
-

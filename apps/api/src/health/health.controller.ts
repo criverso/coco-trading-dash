@@ -9,8 +9,7 @@ export class HealthController {
   health() {
     return {
       status: "ok",
-      service: "player2-api"
+      service: "coco-trading-dash-api"
     };
   }
 }
-

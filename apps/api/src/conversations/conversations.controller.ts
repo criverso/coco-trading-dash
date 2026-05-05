@@ -32,10 +32,9 @@ export class ConversationsController {
   callRoom(@Param("id") id: string) {
     return {
       conversationId: id,
-      roomName: `player2-${id}`,
+      roomName: `coco-trading-dash-${id}`,
       token: "demo-livekit-token",
       mode: "1:1"
     };
   }
 }
-

@@ -2,13 +2,13 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Player 2",
-    short_name: "Player 2",
-    description: "Safety-first meetup matching, clubs, chat, and social play.",
+    name: "Coco Trading Dash",
+    short_name: "Coco Dash",
+    description: "Cocoa market watch, order tickets, desk notes, and trading messages.",
     start_url: "/",
     display: "standalone",
-    background_color: "#f3efe6",
-    theme_color: "#11261e",
+    background_color: "#f6f7f8",
+    theme_color: "#101314",
     icons: [
       {
         src: "/icon.svg",
@@ -18,4 +18,3 @@ export default function manifest(): MetadataRoute.Manifest {
     ]
   };
 }
-

@@ -44,22 +44,22 @@ export class StoreService implements OnModuleInit {
           {
             id: "user-avery",
             displayName: "Avery Brooks",
-            username: "@averyplays",
+            username: "@avery.trades",
             age: 29,
-            bio: "Pick-up tennis, coffee walks, and trying new rec leagues without weird vibes.",
-            city: "Denver",
-            state: "CO",
-            interests: ["Tennis", "Pilates", "Pickleball"],
+            bio: "Cocoa futures, physical-lot pricing, and calm execution during fast markets.",
+            city: "New York",
+            state: "NY",
+            interests: ["Cocoa", "Futures", "Risk"],
             role: "member",
             avatarTone: "mint",
             trustScore: 78,
             friendCount: 12,
-            badges: ["ID verified", "Meetup streak", "Trusted player"],
+            badges: ["Desk verified", "Risk cleared", "Trusted trader"],
             identityVerified: true,
             idCheckDueAt: "2026-05-20T18:00:00.000Z",
             meetupFaceCheckRequired: true,
             biometricRestricted: false,
-            email: "avery@player2.demo",
+            email: "avery@cocotradingdash.demo",
             passwordHash: "",
             emailVerified: true,
             suspended: false
@@ -67,22 +67,22 @@ export class StoreService implements OnModuleInit {
           {
             id: "user-mara",
             displayName: "Mara Chen",
-            username: "@mara.rallies",
+            username: "@mara.cocoa",
             age: 31,
-            bio: "Always up for doubles, morning runs, and low-key clubs that actually meet.",
-            city: "Seattle",
-            state: "WA",
-            interests: ["Running", "Tennis", "Hiking"],
+            bio: "Supply-chain notes, origin premiums, and institutional cocoa coverage.",
+            city: "Chicago",
+            state: "IL",
+            interests: ["Origins", "Hedging", "Logistics"],
             role: "club_owner",
             avatarTone: "orange",
             trustScore: 85,
             friendCount: 20,
-            badges: ["Club owner", "Moderator", "Trusted player"],
+            badges: ["Desk owner", "Moderator", "Trusted trader"],
             identityVerified: true,
             idCheckDueAt: "2026-05-18T18:00:00.000Z",
             meetupFaceCheckRequired: false,
             biometricRestricted: true,
-            email: "mara@player2.demo",
+            email: "mara@cocotradingdash.demo",
             passwordHash: "",
             emailVerified: true,
             suspended: false
@@ -90,22 +90,22 @@ export class StoreService implements OnModuleInit {
           {
             id: "user-riley",
             displayName: "Riley Carter",
-            username: "@riley.ops",
+            username: "@riley.risk",
             age: 35,
-            bio: "Trust and safety, moderation tooling, and too much espresso.",
+            bio: "Risk controls, margin policy, and trade surveillance.",
             city: "Austin",
             state: "TX",
-            interests: ["Ops", "Moderation", "Running"],
+            interests: ["Risk", "Compliance", "Operations"],
             role: "platform_admin",
             avatarTone: "blue",
             trustScore: 92,
             friendCount: 5,
-            badges: ["Platform admin", "Safety lead"],
+            badges: ["Platform admin", "Risk lead"],
             identityVerified: true,
             idCheckDueAt: "2026-05-28T18:00:00.000Z",
             meetupFaceCheckRequired: false,
             biometricRestricted: true,
-            email: "riley@player2.demo",
+            email: "riley@cocotradingdash.demo",
             passwordHash: "",
             emailVerified: true,
             suspended: false
@@ -114,49 +114,49 @@ export class StoreService implements OnModuleInit {
         activities: [
           {
             id: "activity-1",
-            activity: "Tennis",
-            title: "Hit for an hour after work",
-            summary: "Looking for a woman in the 25-35 range to rally tonight. 3.0-3.5 pace, no pressure.",
-            preferredGender: "female",
+            activity: "COCO",
+            title: "Buy COCO May 26 pullback",
+            summary: "Limit bid for cocoa exposure after the London close. Keep size tight until liquidity firms.",
+            preferredGender: "any",
             ageRange: { min: 25, max: 35 },
-            skillLevel: "casual",
-            approximateArea: "Denver, CO · within 12 mi",
+            skillLevel: "competitive",
+            approximateArea: "New York, NY · exchange desk",
             distanceMiles: 12,
-            whenLabel: "Tonight at 6:30 PM",
+            whenLabel: "Good for day",
             createdBy: {
               id: "user-avery",
               displayName: "Avery Brooks",
-              username: "@averyplays",
+              username: "@avery.trades",
               avatarTone: "mint",
               trustScore: 78,
               identityVerified: true
             },
             status: "open",
-            applicants: 3,
+            applicants: 8,
             verificationGate: "required",
             createdAt: "2026-04-28T18:30:00.000Z"
           },
           {
             id: "activity-2",
-            activity: "Running",
-            title: "5k buddy near Green Lake",
-            summary: "Easy run, public route, sunrise start. New people welcome.",
+            activity: "CCK26",
+            title: "Hedge May futures against origin lots",
+            summary: "Working a staggered hedge for Ghana arrivals. Prefer partial fills before settlement.",
             preferredGender: "any",
             ageRange: { min: 24, max: 40 },
-            skillLevel: "beginner",
-            approximateArea: "Seattle, WA · within 6 mi",
+            skillLevel: "competitive",
+            approximateArea: "Chicago, IL · risk desk",
             distanceMiles: 6,
-            whenLabel: "Tomorrow at 7:00 AM",
+            whenLabel: "Before settlement",
             createdBy: {
               id: "user-mara",
               displayName: "Mara Chen",
-              username: "@mara.rallies",
+              username: "@mara.cocoa",
               avatarTone: "orange",
               trustScore: 85,
               identityVerified: true
             },
             status: "open",
-            applicants: 5,
+            applicants: 14,
             verificationGate: "manual_review",
             createdAt: "2026-04-28T17:40:00.000Z"
           }
@@ -164,37 +164,37 @@ export class StoreService implements OnModuleInit {
         clubs: [
           {
             id: "club-1",
-            name: "Mile High Rackets",
-            slug: "mile-high-rackets",
-            summary: "Casual tennis, rotating ladders, and public-court meetups with real moderation.",
-            city: "Denver",
-            state: "CO",
-            membersCount: 164,
+            name: "Cocoa Origins Desk",
+            slug: "cocoa-origins-desk",
+            summary: "Origin premiums, crop flow, freight updates, and broker-reviewed cocoa market color.",
+            city: "New York",
+            state: "NY",
+            membersCount: 1640,
             privacy: "approval",
-            tags: ["Tennis", "Doubles", "After work"],
+            tags: ["Cocoa", "Origins", "Premiums"],
             trustLevelRequired: 70,
             owner: {
               id: "user-mara",
               displayName: "Mara Chen",
-              username: "@mara.rallies",
+              username: "@mara.cocoa",
               avatarTone: "orange"
             }
           },
           {
             id: "club-2",
-            name: "Sunrise Social Miles",
-            slug: "sunrise-social-miles",
-            summary: "Running club for people who want a friendly pace and actual follow-through.",
-            city: "Seattle",
-            state: "WA",
-            membersCount: 91,
+            name: "Macro Commodity Watch",
+            slug: "macro-commodity-watch",
+            summary: "Daily macro, currency, and weather context for cocoa and adjacent soft commodities.",
+            city: "Chicago",
+            state: "IL",
+            membersCount: 910,
             privacy: "public",
-            tags: ["Running", "Morning", "Community"],
+            tags: ["Macro", "Weather", "FX"],
             trustLevelRequired: 60,
             owner: {
               id: "user-mara",
               displayName: "Mara Chen",
-              username: "@mara.rallies",
+              username: "@mara.cocoa",
               avatarTone: "orange"
             }
           }
@@ -203,18 +203,18 @@ export class StoreService implements OnModuleInit {
           {
             id: "event-1",
             clubId: "club-1",
-            title: "Tuesday ladder night",
-            scheduleLabel: "Every Tuesday · 6:30 PM",
-            locationLabel: "Washington Park courts",
+            title: "Daily origin premium call",
+            scheduleLabel: "Weekdays · 8:30 AM",
+            locationLabel: "Coco Trading Dash voice room",
             recurring: true,
             rsvps: 26
           },
           {
             id: "event-2",
             clubId: "club-2",
-            title: "Saturday coffee run",
-            scheduleLabel: "Saturday · 8:00 AM",
-            locationLabel: "Green Lake east entrance",
+            title: "Weekly weather and crop review",
+            scheduleLabel: "Friday · 2:00 PM",
+            locationLabel: "Research desk",
             recurring: true,
             rsvps: 34
           }
@@ -225,13 +225,13 @@ export class StoreService implements OnModuleInit {
             author: {
               id: "user-mara",
               displayName: "Mara Chen",
-              username: "@mara.rallies",
+              username: "@mara.cocoa",
               avatarTone: "orange",
               trustScore: 85
             },
             clubId: "club-1",
-            headline: "New-member safety reminder",
-            body: "If you’re meeting someone new from the club, keep it on a public court and complete the pre-meet selfie check before you head out.",
+            headline: "West Africa arrivals tighten nearby spreads",
+            body: "Fresh port data points to slower bean arrivals this week. Keep an eye on nearby spreads and origin premium quotes before increasing size.",
             createdAt: "2026-04-28T15:10:00.000Z",
             comments: [
               {
@@ -239,16 +239,16 @@ export class StoreService implements OnModuleInit {
                 author: {
                   id: "user-avery",
                   displayName: "Avery Brooks",
-                  username: "@averyplays",
+                  username: "@avery.trades",
                   avatarTone: "mint"
                 },
-                body: "This is exactly why I joined here instead of random group chats.",
+                body: "That matches the bid lift we saw after lunch. I’m keeping May exposure smaller until the next quote run.",
                 createdAt: "2026-04-28T15:21:00.000Z"
               }
             ],
             reactions: [
-              { emoji: "👍", count: 11 },
-              { emoji: "🎾", count: 6 }
+              { emoji: "📈", count: 11 },
+              { emoji: "☕", count: 6 }
             ]
           },
           {
@@ -256,18 +256,18 @@ export class StoreService implements OnModuleInit {
             author: {
               id: "user-avery",
               displayName: "Avery Brooks",
-              username: "@averyplays",
+              username: "@avery.trades",
               avatarTone: "mint",
               trustScore: 78
             },
             clubId: null,
-            headline: "Court finder success",
-            body: "Found a quiet public court through Player 2 and actually got a solid doubles session in. That feels rare and wonderful.",
+            headline: "Risk desk note",
+            body: "Coco Trading Dash flagged a margin-light entry before the morning spike. Keeping alerts and order notes on one screen made the move easier to manage.",
             createdAt: "2026-04-28T13:15:00.000Z",
             comments: [],
             reactions: [
-              { emoji: "👏", count: 8 },
-              { emoji: "☕", count: 2 }
+              { emoji: "📊", count: 8 },
+              { emoji: "✅", count: 2 }
             ]
           }
         ],
@@ -280,46 +280,46 @@ export class StoreService implements OnModuleInit {
               {
                 id: "user-avery",
                 displayName: "Avery Brooks",
-                username: "@averyplays",
+                username: "@avery.trades",
                 avatarTone: "mint",
                 trustScore: 78
               },
               {
                 id: "user-mara",
                 displayName: "Mara Chen",
-                username: "@mara.rallies",
+                username: "@mara.cocoa",
                 avatarTone: "orange",
                 trustScore: 85
               }
             ],
             unreadCount: 2,
             liveCallEnabled: true,
-            lastMessagePreview: "I can take court 3 if that works for you.",
+            lastMessagePreview: "I can work the hedge in two clips if that fits risk.",
             lastMessageAt: "2026-04-28T18:10:00.000Z"
           },
           {
             id: "conversation-2",
             kind: "club",
-            title: "Mile High Rackets captains",
+            title: "Cocoa Origins Desk",
             participants: [
               {
                 id: "user-mara",
                 displayName: "Mara Chen",
-                username: "@mara.rallies",
+                username: "@mara.cocoa",
                 avatarTone: "orange",
                 trustScore: 85
               },
               {
                 id: "user-riley",
                 displayName: "Riley Carter",
-                username: "@riley.ops",
+                username: "@riley.risk",
                 avatarTone: "blue",
                 trustScore: 92
               }
             ],
             unreadCount: 0,
             liveCallEnabled: false,
-            lastMessagePreview: "Moderation queue is clean again.",
+            lastMessagePreview: "Risk review is clean again.",
             lastMessageAt: "2026-04-28T16:50:00.000Z"
           }
         ],
@@ -328,7 +328,7 @@ export class StoreService implements OnModuleInit {
             id: "message-1",
             conversationId: "conversation-1",
             authorId: "user-mara",
-            body: "You still good for a public-court hit tonight?",
+            body: "You still good to work the May cocoa hedge this afternoon?",
             attachmentLabel: null,
             createdAt: "2026-04-28T17:55:00.000Z"
           },
@@ -336,7 +336,7 @@ export class StoreService implements OnModuleInit {
             id: "message-2",
             conversationId: "conversation-1",
             authorId: "user-avery",
-            body: "Yep. I’ll do the meetup face check now so we’re clear.",
+            body: "Yep. I’ll keep the first clip small until the desk confirms the premium quote.",
             attachmentLabel: null,
             createdAt: "2026-04-28T18:02:00.000Z"
           },
@@ -344,7 +344,7 @@ export class StoreService implements OnModuleInit {
             id: "message-3",
             conversationId: "conversation-1",
             authorId: "user-mara",
-            body: "I can take court 3 if that works for you.",
+            body: "I can work the hedge in two clips if that fits risk.",
             attachmentLabel: null,
             createdAt: "2026-04-28T18:10:00.000Z"
           }
@@ -353,16 +353,16 @@ export class StoreService implements OnModuleInit {
           {
             id: "notification-1",
             channel: "in_app",
-            title: "Monthly ID refresh due soon",
-            body: "Complete your next ID check before May 20 to keep posting and sending media.",
+            title: "Risk review due soon",
+            body: "Complete your next account review before May 20 to keep placing larger cocoa orders.",
             read: false,
             createdAt: "2026-04-28T12:00:00.000Z"
           },
           {
             id: "notification-2",
             channel: "web_push",
-            title: "Meetup selfie ready",
-            body: "You can clear the new-person face check now for tonight’s tennis hit.",
+            title: "Price alert triggered",
+            body: "COCO crossed $9,400. Review open tickets before adding exposure.",
             read: false,
             createdAt: "2026-04-28T17:40:00.000Z"
           }
@@ -373,15 +373,15 @@ export class StoreService implements OnModuleInit {
             user: {
               id: "user-mara",
               displayName: "Mara Chen",
-              username: "@mara.rallies",
-              city: "Seattle",
-              state: "WA",
+              username: "@mara.cocoa",
+              city: "Chicago",
+              state: "IL",
               trustScore: 85
             },
             kind: "meetup_face",
             confidenceScore: 0.63,
             decision: "manual_review",
-            reason: "Biometric state excluded from automated meet check",
+            reason: "Trade review required for restricted-state account automation",
             createdAt: "2026-04-28T18:04:00.000Z"
           },
           {
@@ -389,15 +389,15 @@ export class StoreService implements OnModuleInit {
             user: {
               id: "user-avery",
               displayName: "Avery Brooks",
-              username: "@averyplays",
-              city: "Denver",
-              state: "CO",
+              username: "@avery.trades",
+              city: "New York",
+              state: "NY",
               trustScore: 78
             },
             kind: "monthly_id",
             confidenceScore: 0.57,
             decision: "manual_review",
-            reason: "OCR fallback did not meet confidence threshold",
+            reason: "Account document fallback did not meet confidence threshold",
             createdAt: "2026-04-28T11:12:00.000Z"
           }
         ],
@@ -405,16 +405,16 @@ export class StoreService implements OnModuleInit {
           {
             id: "report-1",
             subjectType: "message",
-            subjectLabel: "Direct message from @newfriend23",
-            reason: "Asked to move the meetup off-platform too early",
+            subjectLabel: "Direct message from @newcounterparty23",
+            reason: "Asked to move settlement discussion off-platform too early",
             status: "open",
             createdAt: "2026-04-28T10:15:00.000Z"
           },
           {
             id: "report-2",
             subjectType: "post",
-            subjectLabel: "Open run meetup near Capitol Hill",
-            reason: "Missing public-location details",
+            subjectLabel: "Open cocoa hedge ticket",
+            reason: "Missing price-limit details",
             status: "triaged",
             createdAt: "2026-04-28T09:20:00.000Z"
           }
@@ -432,7 +432,7 @@ export class StoreService implements OnModuleInit {
           {
             id: "log-1",
             actor: "Riley Carter",
-            action: "Escalated verification",
+            action: "Escalated risk review",
             subject: "review-2",
             createdAt: "2026-04-28T11:15:00.000Z"
           }
@@ -441,7 +441,7 @@ export class StoreService implements OnModuleInit {
 
       await Promise.all(
         this.state.users.map(async (user) => {
-          user.passwordHash = await argon2.hash("player2demo");
+          user.passwordHash = await argon2.hash("cocodashdemo");
         })
       );
     }
@@ -520,7 +520,7 @@ export class StoreService implements OnModuleInit {
       displayName: input.displayName,
       username: `@${input.displayName.toLowerCase().replace(/\s+/g, "")}`,
       age: 18,
-      bio: "Freshly joined Player 2.",
+      bio: "Freshly joined Coco Trading Dash.",
       city: input.city,
       state: input.state.toUpperCase(),
       interests: [],
@@ -688,7 +688,7 @@ export class StoreService implements OnModuleInit {
         reason:
           outcome.decision === "auto_fail"
             ? "OSS verification score fell below the hard failure threshold"
-            : "Queued for human review before the meetup or monthly refresh clears",
+            : "Queued for human review before the trade or account refresh clears",
         createdAt: now()
       };
 
